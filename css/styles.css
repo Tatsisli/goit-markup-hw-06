@@ -502,6 +502,61 @@ img {
   height: 24px;
   fill: var(--light);
 }
+/*---------------------FOOTER FORM---------------------------*/
+.footer-form {
+  display: flex;
+  margin-left: 80px;
+  width: 453px;
+}
+.footer-form-title {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 24px;
+  margin-left: 80px;
+}
+.footer-form-email {
+  width: 264px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: inherit;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  margin-right: 24px;
+  transition: border-color var(--transition-dur-and-func);
+}
+
+.footer-form-email:focus {
+  border-color: var(--focus-color);
+}
+
+.footer-form-email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165px;
+  height: 40px;
+  background-color: var(--primary-brand);
+  padding: 8px 24px;
+  align-self: end;
+  color: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
 /*---------------------MODAL---------------------------*/
 .backdrop {
   position: fixed;
@@ -541,6 +596,7 @@ img {
   background-color: var(--accent);
   display: block;
   margin-left: auto;
+  margin-bottom: 24px;
   fill: currentColor;
   transition: color 250ms var(--cub-baz), background-color 250ms var(--cub-baz);
 }
@@ -629,7 +685,46 @@ img {
 .modal-comment:focus {
   border-color: var(--primary-brand);
 }
-
-.modal-btn {
+.modal-chek {
+}
+.chek-text {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.chek-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--dark);
+  border-radius: 2px;
+  margin-right: 8px;
+  transition: background-color 250ms var(--cub-baz), border 250ms var(--cub-baz);
+  fill: transparent;
+}
+.modal-chek:checked + .chek-text span {
+  background-color: var(--focus-color);
+  border: none;
+  fill: var(--light);
+}
+.chek-icon {
+}
+.policy-link {
+  color: var(--primary-brand);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal-send-btn {
   color: var(--white-color);
+  background-color: var(--primary-brand);
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  margin: 24px auto 0;
 }
