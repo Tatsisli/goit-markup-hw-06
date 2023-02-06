@@ -503,17 +503,20 @@ img {
   fill: var(--light);
 }
 /*---------------------FOOTER FORM---------------------------*/
-.footer-form {
-  display: flex;
-  margin-left: 80px;
-  width: 453px;
+.footer-subscribe {
 }
-.footer-form-title {
+
+.footer-subscribe-title {
   display: block;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 24px;
   margin-left: 80px;
+}
+.footer-form {
+  display: flex;
+  margin-left: 80px;
+  width: 453px;
 }
 .footer-form-email {
   width: 264px;
